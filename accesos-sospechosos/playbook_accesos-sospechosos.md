@@ -15,7 +15,6 @@
 - Escalada de privilegios.
 - Riesgos regulatorios y legales.
 
----
 
 ## 2. Detección
 **Herramientas:**
@@ -33,7 +32,7 @@
 - Cambios inesperados de permisos o roles.
 - Ejecución de procesos inmediatamente después del acceso.
 
----
+
 
 ## 3. Clasificación del Incidente
 
@@ -43,7 +42,7 @@
 | Sistemas afectados   | Endpoints de usuarios clínicos y administrativos |
 | Nivel de exposición  | Interna (riesgo de escalamiento y propagación) |
 
----
+
 
 ## 4. Respuesta Inicial
 Acciones inmediatas para reducir el riesgo:
@@ -54,7 +53,7 @@ Acciones inmediatas para reducir el riesgo:
 5. Preservar evidencia (logs de autenticación, eventos de sistema).
 6. Notificar al SOC MSSP para coordinación de respuesta.
 
----
+
 
 ## 5. Análisis y Contención
 1. Analizar logs de autenticación y eventos de seguridad.
@@ -64,7 +63,7 @@ Acciones inmediatas para reducir el riesgo:
 5. Contener el incidente evitando accesos adicionales.
 6. Informar al equipo interno de TI sobre el estado del incidente.
 
----
+
 
 ## 6. Erradicación y Recuperación
 1. Revocar sesiones activas sospechosas.
@@ -82,7 +81,7 @@ Acciones inmediatas para reducir el riesgo:
 **Externa (si aplica):**
 - Autoridades regulatorias o responsables de cumplimiento, según normativa de protección de datos.
 
----
+
 
 ## 8. Lecciones Aprendidas
 1. Documentar cronología del incidente y acciones realizadas.
@@ -91,7 +90,7 @@ Acciones inmediatas para reducir el riesgo:
 4. Reforzar políticas de contraseñas y autenticación multifactor.
 5. Capacitar al personal sobre buenas prácticas de acceso seguro.
 
----
+
 
 ## 9. Cómo detectar y responder a los eventos
 **Detección:**
@@ -106,6 +105,6 @@ Acciones inmediatas para reducir el riesgo:
 - Recuperación segura del sistema.
 - Documentación completa del evento.
 
----
+
 
 > **Nota:** Este playbook es un documento vivo. Actualizar según nuevos tipos de incidentes o cambios en la infraestructura.
