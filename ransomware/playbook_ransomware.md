@@ -61,9 +61,3 @@
 4. Capacitar al personal sobre ciberseguridad.
 
 > **Nota:** Este playbook es un documento vivo. Debe actualizarse ante nuevos ataques de ransomware o cambios en la infraestructura.
-
-## 8. Lecciones Aprendidas
-1. Documentar incidente completo: cronología, sistemas afectados, impacto, acciones y resultados.
-2. Reunión post-mortem con SOC MSSP y personal interno.
-3. Actualizar playbook y políticas internas según hallazgos.
-4. Capacitar al personal sobre ciberseguridad. Capacitar personal en ciberseguridad
