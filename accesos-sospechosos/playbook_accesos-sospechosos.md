@@ -83,7 +83,7 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 
 ---
 
-## Respuesta ante accesos sospechosos
+## 5. Respuesta ante accesos sospechosos
 
 **Acciones:**
 
@@ -102,7 +102,7 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 
 ---
 
-## 5. Impacto potencial
+## 6. Impacto potencial
 
 - Compromiso de cuentas de usuario.  
 - Acceso no autorizado a información clínica.  
@@ -111,7 +111,7 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 
 ---
 
-## 6. Erradicación y recuperación
+## 7. Erradicación y recuperación
 
 - Revocar sesiones activas sospechosas.  
 - Restablecer credenciales comprometidas.  
@@ -121,7 +121,7 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 
 ---
 
-## 7. Notificación
+## 8. Notificación
 
 **Interna:** SOC MSSP, Equipo de TI, Gerencia, Responsable del área afectada.  
 **Externa (si aplica)**: Autoridades regulatorias si hay exposición de datos sensibles (Ley 8968 / HIPAA).
@@ -129,7 +129,7 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 
 ---
 
-## 8. Lecciones aprendidas
+## 9. Lecciones aprendidas
 
 - Documentar la cronología del incidente.  
 - Identificar fallas en controles de acceso.  
