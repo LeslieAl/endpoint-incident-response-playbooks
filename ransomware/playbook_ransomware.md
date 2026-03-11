@@ -17,7 +17,6 @@ Impacto: interrupción de atención a pacientes, pérdida de datos sensibles y r
 - Conexiones a IPs o dominios maliciosos.
 - Actividad anómala en servidores internos o dispositivos médicos conectados.
 
----
 
 ## 2. Mapeo del incidente con MITRE ATT&CK
 Técnicas relevantes para ransomware:
@@ -31,7 +30,6 @@ Técnicas relevantes para ransomware:
 - **T1078 – Valid Accounts**  
   Uso de credenciales legítimas para propagarse o mantener acceso.
 
----
 
 ## 3. Detección
 **Indicadores de Compromiso (IoCs):**
@@ -49,7 +47,6 @@ Técnicas relevantes para ransomware:
 
 > Estas herramientas permiten identificar y alertar sobre actividades de ransomware.
 
----
 
 ## 4. Procedimiento de respuesta
 
@@ -61,7 +58,6 @@ Técnicas relevantes para ransomware:
 **Resultados esperados:**  
 Detección temprana de ransomware y clasificación del incidente para su contención.
 
----
 
 **SOC L2 – Análisis técnico y contención**
 - Analizar endpoints y servidores afectados.  
@@ -72,7 +68,6 @@ Detección temprana de ransomware y clasificación del incidente para su contenc
 **Resultados esperados:**  
 Confirmación de incidentes, evaluación del riesgo y planificación de contención.
 
----
 
 ## 5. Respuesta ante ransomware
 **Acciones:**
@@ -88,7 +83,6 @@ Confirmación de incidentes, evaluación del riesgo y planificación de contenci
 
 > **Nota:** SOC Lead y Especialistas de Redes o Endpoint Security solo supervisan; no ejecutan acciones directas salvo incidentes complejos o escalados.
 
----
 
 ## 6. Erradicación y Recuperación
 - Eliminar malware y cerrar posibles backdoors.  
@@ -97,14 +91,12 @@ Confirmación de incidentes, evaluación del riesgo y planificación de contenci
 - Validar integridad de sistemas clínicos y dispositivos conectados.  
 - Revisión final antes de reconectar dispositivos a la red.
 
----
 
 ## 7. Notificación
 **Interna:** SOC MSSP, gerencia, médicos responsables, RRHH.  
 **Externa (si aplica):** Autoridades sanitarias y pacientes afectados según normativa de privacidad.
 > Canales:  llamadas telefónicas, intranet corporativa, mensajes seguros y encuentros en sala de mando según criticidad.
 
----
 
 ## 8. Lecciones Aprendidas
 - Documentar cronología completa del incidente.  
@@ -113,6 +105,5 @@ Confirmación de incidentes, evaluación del riesgo y planificación de contenci
 - Reforzar políticas de contraseñas, backups y autenticación multifactor.  
 - Capacitar al personal en ciberseguridad y manejo de ransomware.
 
----
 
 > **Nota:** Este playbook es un documento que debe actualizarse ante nuevos ataques de ransomware o cambios en la infraestructura tecnológica de la clínica.
