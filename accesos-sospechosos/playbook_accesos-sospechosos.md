@@ -19,7 +19,6 @@ Este incidente ocurre cuando se detectan comportamientos anómalos en el uso de 
 
 > Este tipo de incidentes puede indicar compromiso de credenciales o accesos no autorizados dentro de los sistemas de la clínica.
 
----
 
 ## 2. Mapeo del incidente con MITRE ATT&CK
 Las técnicas más relevantes para este incidente son:
@@ -33,7 +32,6 @@ Las técnicas más relevantes para este incidente son:
 - **T1098 – Account Manipulation**  
   Modificación de privilegios o configuraciones de cuentas para mantener acceso persistente.  
 
----
 
 ## 3. Detección
 
@@ -55,7 +53,6 @@ Las técnicas más relevantes para este incidente son:
 
 > Estas herramientas permiten identificar patrones sospechosos y generar alertas automáticas.
 
----
 
 ## 4. Procedimiento de respuesta
 
@@ -69,7 +66,6 @@ Las técnicas más relevantes para este incidente son:
 **Resultados esperados:**  
 Detección temprana de accesos anómalos y clasificación de incidentes relevantes para su análisis y contención.
 
----
 
 **SOC L2 – Análisis técnico y contención**
 
@@ -81,7 +77,6 @@ Detección temprana de accesos anómalos y clasificación de incidentes relevant
 **Resultados esperados:**  
 Confirmación de incidentes reales, evaluación del riesgo y planificación de acciones para contener el compromiso de cuentas.
 
----
 
 ## 5. Respuesta ante accesos sospechosos
 
@@ -100,7 +95,6 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 
 > **Nota:** En este tipo de incidente, el SOC Lead y los Especialistas de Redes o Endpoint Security no ejecutan acciones directas; su rol se limita a supervisión general y soporte en infraestructura solo en escenarios de incidentes complejos o escalados.
 
----
 
 ## 6. Impacto potencial
 
@@ -109,7 +103,6 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 - Escalada de privilegios dentro del sistema.  
 - Riesgos regulatorios y legales relacionados con la protección de datos.
 
----
 
 ## 7. Erradicación y recuperación
 
@@ -119,7 +112,6 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 - Validar integridad del endpoint afectado.  
 - Reincorporar el endpoint a la red tras validación completa.
 
----
 
 ## 8. Notificación
 
@@ -127,7 +119,6 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 **Externa (si aplica)**: Autoridades regulatorias si hay exposición de datos sensibles (Ley 8968 / HIPAA).
 > Canales: llamadas telefónicas, intranet corporativa, mensajes seguros y encuentros en sala de mando según criticidad.
 
----
 
 ## 9. Lecciones aprendidas
 
@@ -137,6 +128,5 @@ Confirmación de incidentes reales, evaluación del riesgo y planificación de a
 - Reforzar políticas de contraseñas y autenticación multifactor.  
 - Capacitar al personal en buenas prácticas de seguridad.
 
----
 
 > **Nota:** Este playbook es un documento que actualizarse periódicamente ante nuevos tipos de incidentes o cambios en la infraestructura tecnológica de la clínica.
