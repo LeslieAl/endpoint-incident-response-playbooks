@@ -9,7 +9,7 @@
 **Descripción:**  
 Este incidente ocurre cuando se detectan comportamientos anómalos en el uso de credenciales o accesos a sistemas clínicos o administrativos. Su detección temprana es crítica para prevenir el compromiso de cuentas y la exposición de información sensible.
 
-**Ejemplos de comportamiento sospechoso:**
+**Indicadores:**
 
 - Intentos repetidos de inicio de sesión fallidos (posible fuerza bruta).
 - Accesos desde ubicaciones geográficas inusuales.  
