@@ -102,8 +102,7 @@ Confirmación de incidentes, evaluación del riesgo y planificación de contenci
 ## 7. Notificación
 **Interna:** SOC MSSP, gerencia, médicos responsables, RRHH.  
 **Externa (si aplica):** Autoridades sanitarias y pacientes afectados según normativa de privacidad.
-
-**Canales:** llamadas telefónicas, intranet corporativa, mensajes seguros y encuentros en sala de mando según criticidad.
+> Canales:  llamadas telefónicas, intranet corporativa, mensajes seguros y encuentros en sala de mando según criticidad.
 
 ---
 
