@@ -16,7 +16,6 @@ Este incidente ocurre cuando se detecta software que no está registrado ni auto
 
 > Este tipo de incidentes puede indicar riesgo de malware, fuga de información o brechas de seguridad por uso de software no controlado.
 
----
 
 ## 2. Mapeo del incidente con MITRE ATT&CK
 Las técnicas más relevantes para este incidente son:
@@ -25,7 +24,6 @@ Las técnicas más relevantes para este incidente son:
 - **T1071 – Application Layer Protocol**: Comunicación maliciosa a través de protocolos comunes de aplicación.  
 - **T1083 – File and Directory Discovery**: Exploración de archivos o directorios que puede indicar actividad sospechosa del software.  
 
----
 
 ## 3. Detección
 **Indicadores de Compromiso (IoCs):**  
@@ -43,7 +41,6 @@ Las técnicas más relevantes para este incidente son:
 
 > Estas herramientas permiten detectar la ejecución de software no autorizado y generar alertas automáticas para análisis.
 
----
 
 ## 4. Procedimiento de respuesta
 **SOC L1 – Monitoreo inicial**
@@ -55,7 +52,6 @@ Las técnicas más relevantes para este incidente son:
 **Resultados esperados:**  
 Detección temprana de software no autorizado y clasificación del incidente para su contención.
 
----
 
 **SOC L2 – Análisis técnico y contención**
 - Analizar los sistemas afectados identificados por L1.  
@@ -66,7 +62,6 @@ Detección temprana de software no autorizado y clasificación del incidente par
 **Resultados esperados:**  
 Confirmación de incidentes reales, evaluación de riesgo y planificación de acciones para contener el software no autorizado.
 
----
 
 ## 5. Respuesta ante ejecución de software no autorizado
 **Acciones:**
@@ -82,15 +77,12 @@ Confirmación de incidentes reales, evaluación de riesgo y planificación de ac
 
 > **Nota:** SOC Lead y Especialistas de Redes o Endpoint Security no ejecutan acciones directas; su rol es supervisión y soporte solo en escenarios complejos o escalados.
 
----
-
 ## 6. Impacto potencial
 - Riesgo de malware y ejecución de código no autorizado.  
 - Interrupción de servicios clínicos.  
 - Posible exposición de datos de pacientes.  
 - Vulnerabilidad ante brechas regulatorias.
 
----
 
 ## 7. Erradicación y recuperación
 - Desinstalar software no autorizado y cerrar posibles backdoors.  
@@ -98,14 +90,12 @@ Confirmación de incidentes reales, evaluación de riesgo y planificación de ac
 - Validar integridad de endpoints, servidores y dispositivos conectados.  
 - Reincorporar sistemas a la red solo tras validación completa.
 
----
 
 ## 8. Notificación
 **Interna:** SOC MSSP, personal afectado, TI, gerencia.  
 **Externa:** Socios tecnológicos o proveedores según corresponda.
 > Canales:  llamadas telefónicas, intranet corporativa, mensajes seguros y reuniones en sala de mando según criticidad.
 
----
 
 ## 9. Lecciones Aprendidas
 - Documentar cronología, sistemas afectados, impacto y acciones ejecutadas.  
