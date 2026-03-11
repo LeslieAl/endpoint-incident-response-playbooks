@@ -103,8 +103,7 @@ Confirmación de incidentes reales, evaluación de riesgo y planificación de ac
 ## 8. Notificación
 **Interna:** SOC MSSP, personal afectado, TI, gerencia.  
 **Externa:** Socios tecnológicos o proveedores según corresponda.
-
-**Canales:** llamadas telefónicas, intranet corporativa, mensajes seguros y reuniones en sala de mando según criticidad.
+> Canales:  llamadas telefónicas, intranet corporativa, mensajes seguros y reuniones en sala de mando según criticidad.
 
 ---
 
