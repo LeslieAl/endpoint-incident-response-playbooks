@@ -1,66 +1,117 @@
-# Playbook de Respuesta a Incidentes de Ejecución de Software No Autorizado
+# Playbook – Respuesta a Ejecución de Software No Autorizado
+**SOC MSSP:** Clínica  
+**SIEM:** Wazuh
 
-## Escenario o Tipo de Incidente
-**Tipo:** Ejecución de software no autorizado en sistemas de la clínica.  
-**Descripción:**
-- Software no registrado ejecutándose en endpoints o servidores internos.
-- Riesgo de pérdida de datos, malware y afectación de atención clínica.
+## 1. Escenario del incidente
+**Tipo de incidente:** Ejecución de software no autorizado en endpoints o servidores internos.
 
-**Impacto:**
-- Interrupción de servicios clínicos.
-- Riesgo de exposición de datos de pacientes.
-- Vulnerabilidad a malware y brechas regulatorias.
+**Descripción:**  
+Este incidente ocurre cuando se detecta software que no está registrado ni autorizado ejecutándose en los sistemas de la clínica. Su detección temprana es fundamental para evitar pérdida de datos, propagación de malware y afectación de la atención clínica.
 
-## Detección
-**Herramientas:**
-- EDR (Endpoint Detection & Response)
-- SIEM corporativo gestionado por SOC MSSP
-- Antivirus y firewall de endpoints
-- Logs de servidores y dispositivos médicos
+**Indicadores:**
+- Software no autorizado ejecutándose en endpoints o servidores.  
+- Conexiones externas sospechosas generadas por el software.  
+- Modificaciones no autorizadas en archivos críticos.  
+- Alertas de comportamiento anómalo detectadas por EDR o antivirus.  
 
-**Indicadores de Compromiso (IoCs):**
-- Ejecución de software no registrado
-- Conexiones externas sospechosas
-- Modificaciones de archivos críticos
-- Comportamiento anómalo detectado por EDR
+> Este tipo de incidentes puede indicar riesgo de malware, fuga de información o brechas de seguridad por uso de software no controlado.
 
-## Clasificación del Incidente
+---
 
-| Criterio               | Valor                                           |
-|------------------------|------------------------------------------------|
-| Severidad              | Media/Alta                                     |
-| Sistemas afectados     | Endpoints, servidores internos, dispositivos médicos |
-| Nivel de exposición    | Interna (posible propagación a otros sistemas) |
+## 2. Mapeo del incidente con MITRE ATT&CK
+Las técnicas más relevantes para este incidente son:
 
-## Respuesta Inicial
-1. Aislar el endpoint o servidor afectado.
-2. Bloquear ejecución del software no autorizado.
-3. Revocar credenciales si hay sospecha de escalamiento.
-4. Activar preservación de evidencia (logs, volcados de memoria, capturas de red).
-5. Notificar al SOC MSSP para coordinación de respuesta remota.
+- **T1036 – Masquerading**: Software disfrazado o con nombres falsos para evitar detección.  
+- **T1071 – Application Layer Protocol**: Comunicación maliciosa a través de protocolos comunes de aplicación.  
+- **T1083 – File and Directory Discovery**: Exploración de archivos o directorios que puede indicar actividad sospechosa del software.  
 
-## Análisis y Contención
-1. SOC MSSP realiza análisis forense del endpoint/servidor afectado.
-2. Determinar origen, vector de ataque y cronología.
-3. Contener temporalmente los sistemas afectados.
-4. Validar que no haya propagación a otros endpoints o servidores.
-5. Mantener actualizado al equipo interno de TI sobre hallazgos.
+---
 
-## Erradicación y Recuperación
-1. Desinstalar software no autorizado.
-2. Restaurar configuraciones seguras.
-3. Aplicar parches y reforzar políticas de software permitido.
-4. Validar integridad de sistemas y dispositivos conectados.
-5. Revisar y reconectar sistemas solo tras validación completa.
+## 3. Detección
+**Indicadores de Compromiso (IoCs):**  
+- Ejecución de software no registrado o no autorizado.  
+- Conexiones externas sospechosas hacia IPs o dominios desconocidos.  
+- Modificaciones inesperadas en archivos críticos del sistema.  
+- Alertas de comportamiento anómalo en EDR o antivirus.  
 
-## Notificación
-**Interna:** SOC MSSP, personal afectado.  
+**Herramientas utilizadas:**  
+- EDR (Endpoint Detection & Response)  
+- SIEM gestionado por SOC MSSP (Wazuh)  
+- Logs de autenticación y eventos del sistema operativo  
+- Antivirus y firewall de endpoints  
+- Monitoreo de servidores y dispositivos médicos  
+
+> Estas herramientas permiten detectar la ejecución de software no autorizado y generar alertas automáticas para análisis.
+
+---
+
+## 4. Procedimiento de respuesta
+**SOC L1 – Monitoreo inicial**
+- Revisar alertas generadas por SIEM y EDR sobre ejecución de software no autorizado.  
+- Validar logs de endpoints y servidores para identificar comportamiento anómalo.  
+- Determinar origen del software, IP y usuario asociado.  
+- Escalar incidentes confirmados o de alto riesgo al SOC L2 para análisis profundo.
+
+**Resultados esperados:**  
+Detección temprana de software no autorizado y clasificación del incidente para su contención.
+
+---
+
+**SOC L2 – Análisis técnico y contención**
+- Analizar los sistemas afectados identificados por L1.  
+- Revisar actividad del software ejecutado para evaluar riesgos y posible compromiso.  
+- Correlacionar eventos en SIEM y logs de sistemas para determinar alcance.  
+- Recomendar acciones de contención según criticidad del incidente.
+
+**Resultados esperados:**  
+Confirmación de incidentes reales, evaluación de riesgo y planificación de acciones para contener el software no autorizado.
+
+---
+
+## 5. Respuesta ante ejecución de software no autorizado
+**Acciones:**
+- **Aislamiento del sistema afectado:** SOC MSSP ejecuta cuarentena remota del endpoint o servidor comprometido.  
+- **Bloqueo del software:** SOC MSSP detiene o bloquea la ejecución del software desde herramientas de gestión.  
+- **Preservación de evidencia digital:** SOC MSSP registra logs y eventos críticos en SIEM (Wazuh) y EDR para auditoría.  
+- **Coordinación con TI interna:** SOC MSSP notifica al equipo de TI para apoyo y seguimiento.  
+
+**Resultados esperados:**  
+- Contención efectiva del software no autorizado.  
+- Minimización de riesgos de malware o pérdida de datos.  
+- Mantener evidencia para seguimiento y auditoría.
+
+> **Nota:** SOC Lead y Especialistas de Redes o Endpoint Security no ejecutan acciones directas; su rol es supervisión y soporte solo en escenarios complejos o escalados.
+
+---
+
+## 6. Impacto potencial
+- Riesgo de malware y ejecución de código no autorizado.  
+- Interrupción de servicios clínicos.  
+- Posible exposición de datos de pacientes.  
+- Vulnerabilidad ante brechas regulatorias.
+
+---
+
+## 7. Erradicación y recuperación
+- Desinstalar software no autorizado y cerrar posibles backdoors.  
+- Restaurar configuraciones seguras y aplicar parches.  
+- Validar integridad de endpoints, servidores y dispositivos conectados.  
+- Reincorporar sistemas a la red solo tras validación completa.
+
+---
+
+## 8. Notificación
+**Interna:** SOC MSSP, personal afectado, TI, gerencia.  
 **Externa:** Socios tecnológicos o proveedores según corresponda.
 
-## Lecciones Aprendidas
-1. Documentar cronología, sistemas afectados, impacto y acciones.
-2. Reunión post-mortem con SOC MSSP y personal interno.
-3. Actualizar políticas, procedimientos y playbook.
-4. Capacitar al personal sobre ejecución segura de software autorizado.
+**Canales:** llamadas telefónicas, intranet corporativa, mensajes seguros y reuniones en sala de mando según criticidad.
 
-> **Nota:** Este playbook es un documento vivo. Debe actualizarse ante nuevos incidentes de software no autorizado o cambios en la infraestructura.
+---
+
+## 9. Lecciones Aprendidas
+- Documentar cronología, sistemas afectados, impacto y acciones ejecutadas.  
+- Reunión post-mortem con SOC MSSP y personal interno.  
+- Actualizar playbook y políticas internas según hallazgos.  
+- Capacitar al personal en ejecución segura de software autorizado.
+
+> **Nota:** Este playbook es un documento vivo que debe actualizarse periódicamente ante nuevos incidentes o cambios en la infraestructura tecnológica de la clínica.
