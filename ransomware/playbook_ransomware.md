@@ -34,9 +34,9 @@ Técnicas relevantes para ransomware:
 ## 3. Detección
 **Indicadores de Compromiso (IoCs):**
 - Archivos cifrados con extensiones desconocidas.
-- Mensajes de rescate visibles en los endpoints.
+- Eliminación de archivos.
 - Procesos sospechosos en ejecución.
-- Conexiones a IPs o dominios maliciosos.
+-  Modificación de archivos.
 - Actividad anómala en servidores internos o dispositivos médicos.
 
 **Herramientas utilizadas:**
@@ -77,7 +77,7 @@ Confirmación de incidentes, evaluación del riesgo y planificación de contenci
 - **Coordinación con TI interna:** SOC MSSP notifica al equipo interno de TI para apoyo y seguimiento.  
 
 **Resultados esperados:**  
-- Contener propagación del ransomware.  
+- Contenención del incidente.  
 - Minimizar impacto en operaciones clínicas.  
 - Mantener evidencia para seguimiento y auditoría.  
 
@@ -101,7 +101,7 @@ Confirmación de incidentes, evaluación del riesgo y planificación de contenci
 ## 8. Lecciones Aprendidas
 - Documentar cronología completa del incidente.  
 - Identificar fallas en controles de seguridad.  
-- Actualizar reglas de detección en SIEM y EDR.  
+- Actualizar reglas de Wazuh.  
 - Reforzar políticas de contraseñas, backups y autenticación multifactor.  
 - Capacitar al personal en ciberseguridad y manejo de ransomware.
 
