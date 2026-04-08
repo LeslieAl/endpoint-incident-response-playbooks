@@ -3,10 +3,10 @@
 **SIEM:** Wazuh
 
 ## 1. Escenario del incidente
-**Tipo de incidente:** Ejecución de software no autorizado en endpoints o servidores internos.
+**Tipo de incidente:** Ejecución de software no autorizado en endpoints.
 
 **Descripción:**  
-Este incidente ocurre cuando se detecta software que no está registrado ni autorizado ejecutándose en los sistemas de la clínica. Su detección temprana es fundamental para evitar pérdida de datos, propagación de malware y afectación de la atención clínica.
+Este incidente ocurre cuando se detecta software que no está registrado ni autorizado ejecutándose en los sistemas de la clínica. Su detección temprana es necesaria para evitar pérdida de datos, propagación de malware y afectación de la atención clínica.
 
 **Indicadores:**
 - Software no autorizado ejecutándose en endpoints o servidores.  
