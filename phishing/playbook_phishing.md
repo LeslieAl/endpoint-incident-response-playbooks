@@ -1,7 +1,7 @@
 # Playbook – Respuesta a Incidentes de Phishing en Endpoints
 
 **SOC MSSP:** Clínica  
-**SIEM:** Wazuh  
+**SIEM:** TryHackme 
 
 ---
 
